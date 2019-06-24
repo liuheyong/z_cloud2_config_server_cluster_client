@@ -34,6 +34,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!--z_cloud2_commons-->
+        <dependency>
+            <groupId>com.cloud2.commons</groupId>
+            <artifactId>z_cloud2_commons</artifactId>
+            <version>${z_cloud2_commons.version}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

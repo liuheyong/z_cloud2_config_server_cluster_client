@@ -1,5 +1,6 @@
 package com.cloud2.configclucli.web;
 
+import com.cloud2.commons.constants.Constants;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ public class TestController {
     @Value("${from}")
     private String from;
 
-    @RequestMapping("/from")
+    @RequestMapping(Constants.CLOUD2 + "/from")
     public String from() {
         return this.from;
     }
